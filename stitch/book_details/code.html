@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Work_Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#ba0015",
+                        "outline": "#926f6b",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#93000e",
+                        "background": "#fbf9f7",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "error-container": "#ffdad6",
+                        "surface": "#fbf9f7",
+                        "on-tertiary-container": "#f8faff",
+                        "on-surface": "#1b1c1b",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#8ecdff",
+                        "surface-tint": "#c00016",
+                        "inverse-primary": "#ffb4ac",
+                        "on-tertiary-fixed": "#001e30",
+                        "tertiary-fixed": "#cae6ff",
+                        "tertiary-container": "#007ab3",
+                        "secondary-fixed": "#e4e2e1",
+                        "surface-container-high": "#eae8e6",
+                        "surface-container-highest": "#e4e2e0",
+                        "inverse-surface": "#30302f",
+                        "primary-container": "#e21f26",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#ffdad6",
+                        "on-surface-variant": "#5d3f3c",
+                        "surface-container": "#efedec",
+                        "on-tertiary-fixed-variant": "#004b70",
+                        "outline-variant": "#e7bdb8",
+                        "surface-bright": "#fbf9f7",
+                        "surface-variant": "#e4e2e0",
+                        "on-secondary-container": "#656464",
+                        "on-secondary-fixed-variant": "#474747",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#410003",
+                        "secondary": "#5f5e5e",
+                        "secondary-container": "#e4e2e1",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "tertiary": "#00608e",
+                        "inverse-on-surface": "#f2f0ee",
+                        "on-primary-container": "#fffaf9",
+                        "surface-container-low": "#f5f3f1",
+                        "surface-dim": "#dbdad8",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1b1c1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Work Sans"],
+                        "label": ["Work Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(27, 28, 27, 0.06);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ba0015, #e21f26);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fbf9f7]/80 dark:bg-stone-900/80 backdrop-blur-md flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-stone-500" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="text-xl font-extrabold text-[#ba0015] dark:text-[#e21f26] font-['Manrope'] tracking-tight">Jarir Bookstore</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="active:scale-95 duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-stone-500" data-icon="search">search</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="User" data-alt="portrait of a professional man with a kind expression and clean-cut appearance on a neutral studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHPfWwT34sWveUCERWsD96w29TGjjQ9_RLHS-umV3qKjPdeXXMs42BW4hXZZkayMMU-OcKF4yoj8NvLMX96pLAoFuQqI12aqXB7xH-SiQK9XC12ZNcFFoJQ7wcbaxye6ffJzxh1naRju9zvdLXEVXaea8zsKKXHFgMmArePMXGwvv6uHD3M14WkMINxFDt7eZMvNFfd43qZWSZO6wakgyibqY4FovpZ68IcrBphS7KtRK9YTGu1UadPdAfplHjxcwGRawKtNSdqagu"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Hero Section: Book Details -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-start">
+<!-- Book Cover Column -->
+<div class="md:col-span-5 flex flex-col gap-6">
+<div class="relative group">
+<div class="absolute inset-0 bg-primary/5 rounded-xl translate-x-3 translate-y-3 -z-10 group-hover:translate-x-4 group-hover:translate-y-4 transition-transform"></div>
+<img alt="Book Cover" class="w-full h-auto rounded-lg editorial-shadow object-cover aspect-[2/3]" data-alt="high-quality artistic close-up of a minimalist book cover with elegant serif typography on textured paper, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBup_IFVnvN17MmStKNbPwruCl2PSf-8NBaTt_WG8MyJ739efq1K4MFfhAD7ynlFrEudGro8qNBtBvW7bgUFc9itGkzA2mPmSkj8pjguCkSx5L2h8TEISeWnaIWvbjzAEskbipy_wGjYwKRQZJRyn4_ZvTRuyS__OthE9C7dnR5po47-He-6daFu6Ytsv94HxPPyX0YkkZs7HmDEVSBSqmGeMsL32I10oR6HORu7js3oWkxcKo1SlKSFzlz6XexqiIVHD3ZHpV3lGlI"/>
+</div>
+</div>
+<!-- Content Column -->
+<div class="md:col-span-7 space-y-8">
+<div>
+<span class="text-primary font-label uppercase tracking-widest text-[11px] font-bold mb-2 block">Premium Choice</span>
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tight text-on-surface leading-tight">The Art of Stillness</h2>
+<p class="text-xl text-on-surface-variant font-medium mt-2">by Pico Iyer</p>
+<div class="flex items-center gap-3 mt-4">
+<div class="flex text-[#FFB400]">
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-icon="star" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<span class="text-on-surface-variant text-sm font-medium">4.8 (2,403 reviews)</span>
+</div>
+</div>
+<!-- Personalized Insight Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl editorial-shadow border border-outline-variant/15 flex items-start gap-4">
+<div class="bg-primary/10 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<p class="font-headline font-bold text-on-surface">85% match for you</p>
+<p class="text-on-surface-variant text-sm mt-1 leading-relaxed">Based on your love for <span class="font-semibold text-on-surface">The Alchemist</span>. You enjoy reflective narratives with a philosophical undertone.</p>
+</div>
+</div>
+<!-- Summary Section -->
+<div class="space-y-4">
+<h3 class="text-lg font-headline font-bold border-b border-outline-variant/20 pb-2">Editorial Summary</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg font-light">
+                        In an age of constant movement and distraction, Pico Iyer explores the unexpected power of sitting still. Through evocative storytelling and personal insight, he reveals why the greatest journey we can take is the one that leads us inward. A profound meditation for the modern soul.
+                    </p>
+</div>
+<!-- Attributes Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+<div class="bg-surface-container-low p-4 rounded-lg">
+<p class="text-[10px] uppercase font-bold text-on-surface-variant tracking-wider">Format</p>
+<p class="font-medium">Hardcover</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg">
+<p class="text-[10px] uppercase font-bold text-on-surface-variant tracking-wider">Pages</p>
+<p class="font-medium">192 Pages</p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg">
+<p class="text-[10px] uppercase font-bold text-on-surface-variant tracking-wider">Language</p>
+<p class="font-medium">English</p>
+</div>
+</div>
+<!-- Action Button -->
+<div class="pt-6">
+<button class="w-full md:w-auto px-12 py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-xl font-headline font-bold text-lg editorial-shadow active:scale-95 transition-all flex items-center justify-center gap-3">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+                        Add to Cart — 59.00 SAR
+                    </button>
+</div>
+</div>
+</section>
+<!-- Similar Books Section -->
+<section class="mt-24">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h3 class="text-3xl font-headline font-extrabold tracking-tight">Similar Books You'll Love</h3>
+<p class="text-on-surface-variant mt-1">Curated specifically for your taste in philosophy</p>
+</div>
+<button class="text-primary font-bold hover:underline text-sm uppercase tracking-widest">See All</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Similar Book Card 1 -->
+<div class="group cursor-pointer">
+<div class="bg-surface-container-low rounded-lg p-3 mb-4 transition-all group-hover:bg-surface-container">
+<img alt="Book 1" class="w-full aspect-[2/3] object-cover rounded-sm editorial-shadow mb-4" data-alt="stack of classical literature books on an antique wooden table with soft warm sunlight streaming through a window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6IPF9eqcVZeRWVJ6_IETmazNDjREUCbDSh-fYF0eRGaBt9ehwVoTanWVpdqeCEAUBTnnHmn3lUADRwABjzbc49QBjUXGnv2e5gNnbfqNK7QemdEKxPxXqiapM69xaduegHr6k_Mhx5wHb25Odjqs7DWMB84KU6QSa2ZOhBBibNwht0AnszM0acSztUnt8tcQAWkTnJDGeKF1T8MtR3jlsttMA0UEPTDWmzCkFVaZVOvwBgoeYcnYnD8Q8RvfZequyOu36i5nG4KpB"/>
+<h4 class="font-headline font-bold text-on-surface leading-tight text-sm">Meditations</h4>
+<p class="text-xs text-on-surface-variant mt-1">Marcus Aurelius</p>
+<p class="text-primary font-bold mt-2 text-sm">45.00 SAR</p>
+</div>
+</div>
+<!-- Similar Book Card 2 -->
+<div class="group cursor-pointer">
+<div class="bg-surface-container-low rounded-lg p-3 mb-4 transition-all group-hover:bg-surface-container">
+<img alt="Book 2" class="w-full aspect-[2/3] object-cover rounded-sm editorial-shadow mb-4" data-alt="open book with yellowed pages lying on a bed with soft linen sheets and a warm beverage nearby" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJwPMStUwU49VZZ2Jve4-kkU6t0dTsHn23VbENkcfAyNXML6J-MYjvciMk3kxxJzaAmeUtUVNc5cac0Mr0YxVQQVMlSAb34-THD-ZG-lGxZetbzhUfMe8cnu_NdMRdruQ8VgEs7-riNjOFP8Dw4mj-unPecnILjHQkDOulihWGDgPctuMCUUwyugbRjkoW1hVXkK5Yu-lkdJgzyrWYznbgUGGgX2B3TyKMG76yHkkQaQ1j285IuAjjZ7dwrbbGqmve_4EbckMRJd9v"/>
+<h4 class="font-headline font-bold text-on-surface leading-tight text-sm">Stillness is the Key</h4>
+<p class="text-xs text-on-surface-variant mt-1">Ryan Holiday</p>
+<p class="text-primary font-bold mt-2 text-sm">72.00 SAR</p>
+</div>
+</div>
+<!-- Similar Book Card 3 -->
+<div class="group cursor-pointer">
+<div class="bg-surface-container-low rounded-lg p-3 mb-4 transition-all group-hover:bg-surface-container">
+<img alt="Book 3" class="w-full aspect-[2/3] object-cover rounded-sm editorial-shadow mb-4" data-alt="modern minimalist library with sunlight hitting a single book shelf highlighting colorful book spines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp19EJ5FVF7QihS2B5Ril0WBrYnJOF7PXGZBmjPd3yqB3R_S2UvEK0Qdl_VXiiR5JYePYuo9t7wLLk3lwrelo6q9Zv7dlmAfowqJbZ6b8ZnvVfm_O6Ma4tnUK5ffz9ZhoT49T8MA-aY10V1V4OyX272g959DhxLZIBI928EZXWKno_CjUGgnbi0qLo-4V6NyQeWEPB0-eYbRxb8KGADGmi4v7Km3CYJryYCS17kz5nnlvv-qpuyPsh37zivnNbIrzFoS4XH55hRZZE"/>
+<h4 class="font-headline font-bold text-on-surface leading-tight text-sm">The Daily Stoic</h4>
+<p class="text-xs text-on-surface-variant mt-1">Ryan Holiday</p>
+<p class="text-primary font-bold mt-2 text-sm">85.00 SAR</p>
+</div>
+</div>
+<!-- Similar Book Card 4 -->
+<div class="group cursor-pointer">
+<div class="bg-surface-container-low rounded-lg p-3 mb-4 transition-all group-hover:bg-surface-container">
+<img alt="Book 4" class="w-full aspect-[2/3] object-cover rounded-sm editorial-shadow mb-4" data-alt="collection of vintage books bound in leather on a dark aesthetic background with dramatic moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC0tcbIN81cO5_XkfwCtYHP-0FbvQua9Rv6D-s0Djdt6SIuzQeVucozO4xAXMlFDAg5RzFBuPKSElkQRDbWyj67RRJz1VwDmn__ZGdkwBfqc3VO-vxIxxayJGZ9r3q-yQdR4HB6AdtXP04y_6aptphEyIzn0cDlOvXvgi0G-RVj9bbBufDe4VqvEe6as8O7OqujWCtGm8-sVllaHBV1ioMxLQB-PMzrNET4Gj47xr-isogZ7tlc2Pk4S9whAVN1CmGMM-F33XrZkNF"/>
+<h4 class="font-headline font-bold text-on-surface leading-tight text-sm">A Guide to the Good Life</h4>
+<p class="text-xs text-on-surface-variant mt-1">William B. Irvine</p>
+<p class="text-primary font-bold mt-2 text-sm">64.00 SAR</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 rounded-t-xl bg-[#fbf9f7]/80 dark:bg-stone-900/80 backdrop-blur-md flex justify-around items-center px-4 pb-6 pt-2 w-full shadow-[0_-10px_30px_rgba(27,28,27,0.04)]">
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 font-['Work_Sans'] text-[11px] font-medium uppercase tracking-wider">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span>Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 font-['Work_Sans'] text-[11px] font-medium uppercase tracking-wider">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span>Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 font-['Work_Sans'] text-[11px] font-medium uppercase tracking-wider">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span>Profile</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#ba0015] dark:text-[#e21f26] font-bold scale-110 transition-transform font-['Work_Sans'] text-[11px] uppercase tracking-wider">
+<span class="material-symbols-outlined" data-icon="shopping_cart" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+<span>Cart</span>
+</div>
+</nav>
+</body></html>

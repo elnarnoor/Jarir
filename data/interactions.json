@@ -1,0 +1,446 @@
+[
+  {
+    "userId": "u1",
+    "productId": "p1",
+    "type": "view",
+    "ts": "2026-03-01"
+  },
+  {
+    "userId": "u1",
+    "productId": "p9",
+    "type": "cart",
+    "ts": "2026-03-02"
+  },
+  {
+    "userId": "u1",
+    "productId": "p5",
+    "type": "purchase",
+    "ts": "2026-03-05"
+  },
+  {
+    "userId": "u1",
+    "productId": "p3",
+    "type": "view",
+    "ts": "2026-03-06"
+  },
+  {
+    "userId": "u2",
+    "productId": "p4",
+    "type": "view",
+    "ts": "2026-02-10"
+  },
+  {
+    "userId": "u2",
+    "productId": "p11",
+    "type": "purchase",
+    "ts": "2026-02-12"
+  },
+  {
+    "userId": "u2",
+    "productId": "p8",
+    "type": "view",
+    "ts": "2026-02-15"
+  },
+  {
+    "userId": "u2",
+    "productId": "p6",
+    "type": "cart",
+    "ts": "2026-02-18"
+  },
+  {
+    "userId": "u2",
+    "productId": "p5",
+    "type": "purchase",
+    "ts": "2026-03-01"
+  },
+  {
+    "userId": "u3",
+    "productId": "p7",
+    "type": "purchase",
+    "ts": "2026-01-20"
+  },
+  {
+    "userId": "u3",
+    "productId": "p12",
+    "type": "view",
+    "ts": "2026-01-22"
+  },
+  {
+    "userId": "u3",
+    "productId": "p15",
+    "type": "purchase",
+    "ts": "2026-01-25"
+  },
+  {
+    "userId": "u3",
+    "productId": "p5",
+    "type": "view",
+    "ts": "2026-03-02"
+  },
+  {
+    "userId": "u4",
+    "productId": "p14",
+    "type": "view",
+    "ts": "2026-04-01"
+  },
+  {
+    "userId": "u4",
+    "productId": "p6",
+    "type": "purchase",
+    "ts": "2026-04-02"
+  },
+  {
+    "userId": "u4",
+    "productId": "p5",
+    "type": "view",
+    "ts": "2026-04-03"
+  },
+  {
+    "userId": "u4",
+    "productId": "p14",
+    "type": "purchase",
+    "ts": "2026-03-10"
+  },
+  {
+    "userId": "u5",
+    "productId": "p13",
+    "type": "view",
+    "ts": "2026-04-01"
+  },
+  {
+    "userId": "u5",
+    "productId": "p17",
+    "type": "cart",
+    "ts": "2026-04-02"
+  },
+  {
+    "userId": "u5",
+    "productId": "p5",
+    "type": "view",
+    "ts": "2026-04-03"
+  },
+  {
+    "userId": "u5",
+    "productId": "p3",
+    "type": "purchase",
+    "ts": "2026-04-04"
+  },
+  {
+    "userId": "u6",
+    "productId": "p20",
+    "type": "view",
+    "ts": "2026-04-05"
+  },
+  {
+    "userId": "u6",
+    "productId": "p8",
+    "type": "cart",
+    "ts": "2026-04-06"
+  },
+  {
+    "userId": "u6",
+    "productId": "p11",
+    "type": "view",
+    "ts": "2026-04-07"
+  },
+  {
+    "userId": "u6",
+    "productId": "p19",
+    "type": "purchase",
+    "ts": "2026-04-08"
+  },
+  {
+    "userId": "u1",
+    "productId": "p22",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p19",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p13",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p17",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p16",
+    "type": "cart",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p4",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p18",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p20",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p8",
+    "type": "cart",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p11",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p15",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p17",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p13",
+    "type": "cart",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p5",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p3",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p14",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p6",
+    "type": "cart",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p12",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p5",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p19",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p21",
+    "type": "cart",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p8",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p19",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p21",
+    "type": "cart",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p8",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p14",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p6",
+    "type": "cart",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p12",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p5",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p17",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p13",
+    "type": "cart",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p5",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p3",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p20",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p8",
+    "type": "cart",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p11",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p15",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p13",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p17",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p16",
+    "type": "cart",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p4",
+    "type": "view",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p18",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p3",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p3",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p3",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p8",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p7",
+    "type": "cart",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p5",
+    "type": "cart",
+    "ts": "2026-04-09"
+  },
+  {
+    "userId": "u1",
+    "productId": "p22",
+    "type": "purchase",
+    "ts": "2026-04-09"
+  }
+]

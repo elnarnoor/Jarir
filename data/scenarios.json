@@ -1,0 +1,57 @@
+[
+  {
+    "id": "remote_worker",
+    "label": "Remote worker",
+    "description": "Webcam, hub, chair — boosts desk & streaming accessories.",
+    "events": [
+      { "productId": "p13", "type": "view" },
+      { "productId": "p17", "type": "view" },
+      { "productId": "p16", "type": "cart" },
+      { "productId": "p4", "type": "view" },
+      { "productId": "p18", "type": "purchase" }
+    ]
+  },
+  {
+    "id": "student_kit",
+    "label": "Student kit",
+    "description": "Laptop, e-reader, lamp — study-focused signals.",
+    "events": [
+      { "productId": "p20", "type": "view" },
+      { "productId": "p8", "type": "cart" },
+      { "productId": "p11", "type": "purchase" },
+      { "productId": "p15", "type": "view" }
+    ]
+  },
+  {
+    "id": "creator_streaming",
+    "label": "Creator / streaming",
+    "description": "Ring light, webcam, mic-adjacent accessories.",
+    "events": [
+      { "productId": "p17", "type": "purchase" },
+      { "productId": "p13", "type": "cart" },
+      { "productId": "p5", "type": "view" },
+      { "productId": "p3", "type": "view" }
+    ]
+  },
+  {
+    "id": "gaming_upgrade",
+    "label": "Gaming upgrade",
+    "description": "Gaming laptop echo + peripherals.",
+    "events": [
+      { "productId": "p14", "type": "view" },
+      { "productId": "p6", "type": "cart" },
+      { "productId": "p12", "type": "view" },
+      { "productId": "p5", "type": "purchase" }
+    ]
+  },
+  {
+    "id": "jarir_books_audio",
+    "label": "Books + audio",
+    "description": "Arabic books bundle + wireless earbuds.",
+    "events": [
+      { "productId": "p19", "type": "view" },
+      { "productId": "p21", "type": "cart" },
+      { "productId": "p8", "type": "view" }
+    ]
+  }
+]

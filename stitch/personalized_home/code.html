@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jarir Bookstore - Digital Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Work_Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary": "#ba0015",
+                      "outline": "#926f6b",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed-variant": "#93000e",
+                      "background": "#fbf9f7",
+                      "on-secondary-fixed": "#1b1c1c",
+                      "primary-fixed-dim": "#ffb4ac",
+                      "error-container": "#ffdad6",
+                      "surface": "#fbf9f7",
+                      "on-tertiary-container": "#f8faff",
+                      "on-surface": "#1b1c1b",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed-dim": "#8ecdff",
+                      "surface-tint": "#c00016",
+                      "inverse-primary": "#ffb4ac",
+                      "on-tertiary-fixed": "#001e30",
+                      "tertiary-fixed": "#cae6ff",
+                      "tertiary-container": "#007ab3",
+                      "secondary-fixed": "#e4e2e1",
+                      "surface-container-high": "#eae8e6",
+                      "surface-container-highest": "#e4e2e0",
+                      "inverse-surface": "#30302f",
+                      "primary-container": "#e21f26",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "primary-fixed": "#ffdad6",
+                      "on-surface-variant": "#5d3f3c",
+                      "surface-container": "#efedec",
+                      "on-tertiary-fixed-variant": "#004b70",
+                      "outline-variant": "#e7bdb8",
+                      "surface-bright": "#fbf9f7",
+                      "surface-variant": "#e4e2e0",
+                      "on-secondary-container": "#656464",
+                      "on-secondary-fixed-variant": "#474747",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed": "#410003",
+                      "secondary": "#5f5e5e",
+                      "secondary-container": "#e4e2e1",
+                      "secondary-fixed-dim": "#c8c6c6",
+                      "tertiary": "#00608e",
+                      "inverse-on-surface": "#f2f0ee",
+                      "on-primary-container": "#fffaf9",
+                      "surface-container-low": "#f5f3f1",
+                      "surface-dim": "#dbdad8",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "on-background": "#1b1c1b"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Work Sans"],
+                      "label": ["Work Sans"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-transition { transition: background-color 0.3s ease; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fbf9f7]/80 dark:bg-stone-900/80 backdrop-blur-md flex justify-between items-center px-6 py-4 w-full no-border tonal-transition bg-surface-container-low flat no-shadows">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#e21f26] dark:text-[#ff4d4d] hover:opacity-80 transition-opacity active:scale-95 duration-200" data-icon="search">search</span>
+<span class="text-xl font-extrabold text-[#ba0015] dark:text-[#e21f26] font-['Manrope'] tracking-tight">Jarir Bookstore</span>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-outline-variant/20 hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<img alt="Profile" data-alt="close-up portrait of a professional man with a kind expression against a soft studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCglHHrEc0S7GdjWW3Rha7jsk_AUVZg7Xb9bvdFxB390VLWuoFKLgsNCMl-Vuj2jIGg1vX0XI5rD98s2gYwgkO-Sg2iMwmuBTS5k8FiH8TJUJwe-hv9cPw49r06o9Q36EeVn-w2lSUETpu4bjT-PYQ-xezvsoQPk-ytTKz4r2qSSbjCoEL6phuqRV0njc3v4yN92ldlG6jPU7Q6-jI7K36zOe5or5e2igIWwEHKsfat_s7MCiOUYkAtClACQKzF7z8pMLRfKnHNfYOl"/>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 space-y-12">
+<!-- Greeting Section -->
+<section class="space-y-2">
+<p class="font-label text-on-surface-variant uppercase tracking-[0.2em] text-[10px] font-semibold">Welcome back</p>
+<h1 class="font-headline text-4xl font-extrabold tracking-tight text-on-surface">Good morning, Ahmed</h1>
+</section>
+<!-- Picked for You - Large Hero Layout -->
+<section class="relative">
+<div class="flex justify-between items-end mb-6">
+<div>
+<h2 class="font-headline text-2xl font-bold">Picked for You</h2>
+<p class="font-body text-on-surface-variant text-sm">Curated based on your love for philosophy</p>
+</div>
+<button class="text-primary font-bold text-sm hover:opacity-80 transition-opacity">See All</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Large Feature Card -->
+<div class="group relative aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-lowest shadow-sm hover:shadow-xl transition-shadow duration-300">
+<img alt="Book Cover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="artistic book cover of a minimalist philosophy book with abstract shapes and muted earth tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJhPRdPVtRZKJcvlSL5Y9P6biltuKTS7SBh2FuWvol4PNqukJrN6C8huAP3n0UvbBnBkq-moWu3vNRjixFX8H-xUvjxyzvZdeL9qGsfuEKAvrcVq97qgf0HQ-jRVjDB-Zi-H-VfFikAxps3ahRqbIA91gSpLkOYfZ-1jFMb_60v_WVCjMJ319QY022GwRpORCR2Cwq2BFNK2FFd8DNAy77nEp2u3wruIzTnndhw8Z0oRloiysJBbGBqCxgfwfKNho69peAFsGTQzmg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
+<span class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full w-fit mb-4">EDITOR'S CHOICE</span>
+<h3 class="text-white font-headline text-3xl font-extrabold leading-tight mb-2">Meditations</h3>
+<p class="text-white/80 font-body text-sm mb-6">Marcus Aurelius</p>
+<button class="w-full py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold rounded-xl active:scale-95 transition-transform">Explore This Edition</button>
+</div>
+</div>
+<!-- Secondary Bento Pair -->
+<div class="space-y-6">
+<div class="h-1/2 bg-surface-container-low rounded-xl p-6 flex gap-6 items-center group cursor-pointer">
+<div class="w-1/3 aspect-[2/3] rounded-sm shadow-md overflow-hidden flex-shrink-0">
+<img alt="Book" class="w-full h-full object-cover" data-alt="classic book cover design with gold embossed lettering and dark leather texture background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7mLIc3m2yaT_bgF2zop0p6mEEVGmZAET5ofDEofQPhm6EtW8SFgaEDJX2eC7ccicBO2JEoNinzpru0orX2mWe_qM4jNmXB10UPxfC2iIP_r-ZrN0DtaI0ZHP3rliCNrdW_B_SP59XxNVjUjixK4CAz_cz5igKO9ABZkuEoTju7_8gaDXtbcdAlGJSekiRIMrASto2ozDwjwe726Ss5QiRgI9u8TFaTXJgM_-Y2VWp2-BJu3hc-xHZzDL2yjAuPHB4Jr9suHSY11lj"/>
+</div>
+<div class="flex flex-col">
+<span class="text-primary font-bold text-[10px] tracking-widest uppercase mb-2">New Release</span>
+<h4 class="font-headline font-bold text-lg leading-snug mb-1 group-hover:text-primary transition-colors">The Daily Stoic</h4>
+<p class="text-on-surface-variant text-sm mb-3">Ryan Holiday</p>
+<p class="text-xs text-on-surface-variant line-clamp-2 italic">"A guide to living a resilient and fulfilled life..."</p>
+</div>
+</div>
+<div class="h-1/2 bg-surface-container-highest rounded-xl p-6 flex gap-6 items-center group cursor-pointer">
+<div class="w-1/3 aspect-[2/3] rounded-sm shadow-md overflow-hidden flex-shrink-0">
+<img alt="Book" class="w-full h-full object-cover" data-alt="modern minimalist book cover featuring a single architectural element and clean sans-serif typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSSMVQI4bAdNUCxxzYjBn0zOniG0v4Z3F8VSBn_e1dFTdQRbbAsb_g9tOzKJHzR0fQeJTv2WfiywCPEFR4T52ufmP_T-K8cQvatXayMkuUI00iQq2Ibsa9U73NFgOUJxamCqkxeSVV-RrlEnKtUCuCCYw32U6oORjZeHo-Mlc9TG7dsc-yxJhk502tEYmj7XxfsQXkkqk4QGyLrbMNC7QCpNmlRZyC9PjgP-ndg79HejxEa_Mgh3NLw7edgts10UEVyC-wF01LHeZ7"/>
+</div>
+<div class="flex flex-col">
+<span class="text-primary font-bold text-[10px] tracking-widest uppercase mb-2">Trending</span>
+<h4 class="font-headline font-bold text-lg leading-snug mb-1 group-hover:text-primary transition-colors">Atomic Habits</h4>
+<p class="text-on-surface-variant text-sm mb-3">James Clear</p>
+<p class="text-xs text-on-surface-variant line-clamp-2">The definitive guide to breaking bad behaviors.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Interest Section -->
+<section class="py-12 -mx-6 px-6 bg-surface-container-low">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h2 class="font-headline text-2xl font-bold">Based on interest in <span class="text-primary">Sci-Fi</span></h2>
+<p class="font-body text-on-surface-variant text-sm">Expanding your horizons beyond the stars</p>
+</div>
+</div>
+<div class="flex gap-6 overflow-x-auto no-scrollbar pb-4 -mx-6 px-6">
+<!-- Book Card Small -->
+<div class="w-40 flex-shrink-0 space-y-3">
+<div class="aspect-[2/3] rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+<img alt="Dune" class="w-full h-full object-cover" data-alt="vintage science fiction book cover with desert dunes and a massive celestial body in the sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwINc5zGqlUFGUJe0_SVAKsdDs9wS3LjflE2k4TvStLZ0STtGe2yQbqEcOQfS5R2Z108ynFyn3mHu_U8d2JNiUGYjBIa1FzGTe-1XnNyYi8pKgolIvU9UtWuEBA4YikcVhnDKE4zorKPhoDTCNCODC0hFsTdwuJwp9QSJr52kc1TcQXVkvxe4SKlXRdgwxq2Waadr-zf1Piokam-JfWwjU2jUJqvHGSDAsHIizs-K-mRbVCxY5ath362zXqqb5gtcON53yqXxjQ8sd"/>
+</div>
+<div>
+<h5 class="font-headline font-bold text-sm line-clamp-1">Dune: Deluxe</h5>
+<p class="font-body text-xs text-on-surface-variant">Frank Herbert</p>
+<p class="text-primary font-bold mt-2">95.00 SAR</p>
+</div>
+</div>
+<div class="w-40 flex-shrink-0 space-y-3">
+<div class="aspect-[2/3] rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+<img alt="Book" class="w-full h-full object-cover" data-alt="futuristic book cover with neon glowing lines and a dark moody atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4uRg6-sgheLFCPvmTel1J5rtiZLRYRaJB948w5q3xeM-0ud2TqNvtNlH9rEEc3KS2fkokNR1CecU9zc1-LPjJLPHi0TRzd9wwkEzecAJT0c3Q-HDlwAXcjCxRMM0pAb9iNYt0GuWQmElnQxzG3Px0BkBA36EKr2rp3ljfl6nK-6oBOA-dQn8nldIn5oRYmYn4IBYZ8uNzJi-6-sSgvVSHn49F-_XWG9UNyh73hd3i2NIBTSYuzV_HzmBeG7FJqCzeMh8WIml8Yw1B"/>
+</div>
+<div>
+<h5 class="font-headline font-bold text-sm line-clamp-1">Project Hail Mary</h5>
+<p class="font-body text-xs text-on-surface-variant">Andy Weir</p>
+<p class="text-primary font-bold mt-2">72.00 SAR</p>
+</div>
+</div>
+<div class="w-40 flex-shrink-0 space-y-3">
+<div class="aspect-[2/3] rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+<img alt="Book" class="w-full h-full object-cover" data-alt="deep space nebula with vibrant purples and oranges on a clean book cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYzuU2xz2ZU2vfMcp274wj8eICUUNzzJHOvoiP3LrwnKOz7IY4fxW1IOwp2OWpAWq6kqh40U_OjUEhIbDwCcmp3kyHB56ndUlCTVGz4QH0boL4JpSU3mAyy00LChUdrtinnKQLx9jVViQPOOIYn4rVQdbtP1Fp0yLcBeKPzORwZxDbdxzllnZKGT5GiKH6PA1tNBJySODnjnLJ1aKFosfjrNp4LlyK8O9yEpsCm2_YjbKhYnTXx-gsTA9biLAM6pEqOqG4J5Zfo-cy"/>
+</div>
+<div>
+<h5 class="font-headline font-bold text-sm line-clamp-1">Foundation</h5>
+<p class="font-body text-xs text-on-surface-variant">Isaac Asimov</p>
+<p class="text-primary font-bold mt-2">55.00 SAR</p>
+</div>
+</div>
+<div class="w-40 flex-shrink-0 space-y-3">
+<div class="aspect-[2/3] rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+<img alt="Book" class="w-full h-full object-cover" data-alt="abstract tech circuit pattern on a dark book cover with silver accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiP097pld3El4blUhNkZzZvDwoolHyS94o_5AWD-HnJgPepjIXm-Po6evmCA46aX66a4R8xrH-DrdcPehq9P182l8cYUUDxHKmZ1OFL6D3-NXzsrZcSaskwdmO4Ks0ZtspIV0wyTzYv1Q4nJiDDeAZMCbidSxiW0s68u78dTwAHbG1NgL847KCkgrVxWVEGs85zJKhhIdEqc3oQKYrr7p68IgVrmskiOUMzbiuw5tdxAc7dQXqNeMU51_w8YiX1azom1_D99vSePiJ"/>
+</div>
+<div>
+<h5 class="font-headline font-bold text-sm line-clamp-1">Snow Crash</h5>
+<p class="font-body text-xs text-on-surface-variant">Neal Stephenson</p>
+<p class="text-primary font-bold mt-2">68.00 SAR</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Daily Top 5 Recommendations -->
+<section class="space-y-6 pb-12">
+<div class="flex items-center gap-3">
+<div class="h-8 w-1 bg-primary"></div>
+<h2 class="font-headline text-2xl font-bold tracking-tight">Daily Top 5</h2>
+</div>
+<div class="space-y-4">
+<!-- Rank 1 -->
+<div class="flex items-center gap-6 p-4 rounded-xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(0,0,0,0.02)] group cursor-pointer hover:bg-surface-container transition-colors">
+<span class="font-headline text-5xl font-extrabold text-outline-variant/30 italic group-hover:text-primary/20 transition-colors">01</span>
+<div class="w-20 aspect-[2/3] rounded-sm overflow-hidden flex-shrink-0 shadow-sm">
+<img alt="Top 1" class="w-full h-full object-cover" data-alt="richly detailed illustration of a classical library on a book cover with deep navy and gold colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6ujiBbPcMqn6Vk8jAjBmCPd7pDYsrf9mTyVO6cXtY2J1hKCZQotAsdAz2w_hryrbuvJLYzWZfsP6VCz0ZqfFGpKv27S3OGcKcxt6PhOW4j9g8i2yNg8NR39zNDTZGdyiRfHRVh-Pqv5J9byUWLZEYNb5-1axCRB_mnNBaQDuuXzHG0Ri3C1ONQCdVub5zhMPibS09MGxCWx1Qs7mGBJtcJ_lvMP3NhxU_LvtRCtAvoNQwUIHqjuGaRf426kfI9IkzBycVU-6A1SyH"/>
+</div>
+<div class="flex-1">
+<h6 class="font-headline font-bold text-lg group-hover:text-primary transition-colors">Shadow of the Wind</h6>
+<p class="text-on-surface-variant text-sm">Carlos Ruiz Zafón</p>
+<div class="flex gap-1 mt-2">
+<span class="material-symbols-outlined text-xs text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<!-- Rank 2 -->
+<div class="flex items-center gap-6 p-4 rounded-xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(0,0,0,0.02)] group cursor-pointer hover:bg-surface-container transition-colors">
+<span class="font-headline text-5xl font-extrabold text-outline-variant/30 italic group-hover:text-primary/20 transition-colors">02</span>
+<div class="w-20 aspect-[2/3] rounded-sm overflow-hidden flex-shrink-0 shadow-sm">
+<img alt="Top 2" class="w-full h-full object-cover" data-alt="minimalist white book cover with a single red circle and delicate black text" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4zXbO0nCNlGkqbPltY9oLlYo4gQNE6gFSMxveApSDrUCQifR2rW_UEkcfFU1JP8Sx10LKAtOomzQEn3uv7Rb6_bd_ILexDmHLHMFGBwbYlNSsHlqICJAxFCX42tuJwnGmpudR92C_V3DzjyXczSn4SvXQ-wkT6gwB14dYCAt5Vmsjq3_P62pIf05b4kh4zM29AtOQg37x0cZ_Pil676RtDNqqbnPTSwo_FVJxVktQ60byjSsjyl7t5wdb9Wdx_y8lNG8XwR7HquV4"/>
+</div>
+<div class="flex-1">
+<h6 class="font-headline font-bold text-lg group-hover:text-primary transition-colors">Ikigai</h6>
+<p class="text-on-surface-variant text-sm">Héctor García</p>
+<div class="flex gap-1 mt-2">
+<span class="material-symbols-outlined text-xs text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs text-stone-300" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-xl bg-[#fbf9f7]/80 dark:bg-stone-900/80 backdrop-blur-md flex justify-around items-center px-4 pb-6 pt-2 w-full no-border tonal-transition shadow-[0_-10px_30px_rgba(27,28,27,0.04)]">
+<div class="flex flex-col items-center justify-center text-[#ba0015] dark:text-[#e21f26] font-bold scale-110 transition-transform active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Work_Sans'] text-[11px] font-medium uppercase tracking-wider">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#e21f26] transition-colors active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-['Work_Sans'] text-[11px] font-medium uppercase tracking-wider">Discover</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#e21f26] transition-colors active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Work_Sans'] text-[11px] font-medium uppercase tracking-wider">Profile</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#e21f26] transition-colors active:scale-90 duration-150 cursor-pointer">
+<div class="relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-primary text-white text-[8px] font-bold h-3.5 w-3.5 flex items-center justify-center rounded-full">2</span>
+</div>
+<span class="font-['Work_Sans'] text-[11px] font-medium uppercase tracking-wider">Cart</span>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#ba0015",
+                    "outline": "#926f6b",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed-variant": "#93000e",
+                    "background": "#fbf9f7",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "primary-fixed-dim": "#ffb4ac",
+                    "error-container": "#ffdad6",
+                    "surface": "#fbf9f7",
+                    "on-tertiary-container": "#f8faff",
+                    "on-surface": "#1b1c1b",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#8ecdff",
+                    "surface-tint": "#c00016",
+                    "inverse-primary": "#ffb4ac",
+                    "on-tertiary-fixed": "#001e30",
+                    "tertiary-fixed": "#cae6ff",
+                    "tertiary-container": "#007ab3",
+                    "secondary-fixed": "#e4e2e1",
+                    "surface-container-high": "#eae8e6",
+                    "surface-container-highest": "#e4e2e0",
+                    "inverse-surface": "#30302f",
+                    "primary-container": "#e21f26",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#ffdad6",
+                    "on-surface-variant": "#5d3f3c",
+                    "surface-container": "#efedec",
+                    "on-tertiary-fixed-variant": "#004b70",
+                    "outline-variant": "#e7bdb8",
+                    "surface-bright": "#fbf9f7",
+                    "surface-variant": "#e4e2e0",
+                    "on-secondary-container": "#656464",
+                    "on-secondary-fixed-variant": "#474747",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#410003",
+                    "secondary": "#5f5e5e",
+                    "secondary-container": "#e4e2e1",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "tertiary": "#00608e",
+                    "inverse-on-surface": "#f2f0ee",
+                    "on-primary-container": "#fffaf9",
+                    "surface-container-low": "#f5f3f1",
+                    "surface-dim": "#dbdad8",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "on-background": "#1b1c1b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Work Sans"],
+                    "label": ["Work Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-editorial-gradient {
+            background: linear-gradient(135deg, #ba0015 0%, #e21f26 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fbf9f7]/80 backdrop-blur-md flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#e21f26] hover:opacity-80 transition-opacity active:scale-95 duration-200 cursor-pointer">search</span>
+</div>
+<div class="font-['Manrope'] font-bold tracking-tight text-xl font-extrabold text-[#ba0015]">Jarir Bookstore</div>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-highest border border-outline-variant/15">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a middle-aged man with a friendly expression in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEoqp_Hf_S52pe7QqqCi5J6MIuCgxCSTEMT8oBxhMExkrNsU_vM30dN2u9G-JpY7izUCMWrH24A_1ueeN2_XtKFgSZg_wdAIE0H9d3GIrqaUdkEyfbHFR9qDPPoPQIhl8nDbr9vWmf_oPfWlBrIO6YOhgNxx67DnNikeTJusVDPkIyzOEuAQfCeP9fkrAfEPo-rzmT9UHmE6hInTlQohj6nIz1wBGXFLTemD9mtkRiqiPmbl4IPRpk9MzLm3RIXqCFcHlCqzN3Jo_9"/>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Hero Section: Persona Profile -->
+<section class="mb-12">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-2">Personal Curation</p>
+<h1 class="font-headline text-4xl font-extrabold tracking-tight text-on-surface leading-tight mb-4">
+                The Renaissance <br/><span class="text-primary">Reader</span>
+</h1>
+<p class="text-on-surface-variant max-w-md leading-relaxed">
+                Based on your last 12 purchases, our engine sees a profile that balances technical rigor with narrative depth.
+            </p>
+</section>
+<!-- Bento Grid: Reading Tastes & Insights -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+<!-- Taste Radar / Chart Mock -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-8 shadow-[0_4px_20px_rgba(27,28,27,0.02)] relative overflow-hidden flex flex-col items-center justify-center min-h-[300px]">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent"></div>
+<div class="relative w-64 h-64 border-2 border-primary/10 rounded-full flex items-center justify-center">
+<div class="absolute inset-0 border border-primary/5 rounded-full scale-75"></div>
+<div class="absolute inset-0 border border-primary/5 rounded-full scale-50"></div>
+<!-- Visual Data Cloud -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-4 px-3 py-1 bg-surface-container-highest text-primary font-bold text-xs rounded-full">TECH</div>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-4 px-3 py-1 bg-surface-container-highest text-primary font-bold text-xs rounded-full">FICTION</div>
+<div class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-8 px-3 py-1 bg-surface-container-highest text-primary font-bold text-xs rounded-full">BIOGRAPHY</div>
+<div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-8 px-3 py-1 bg-surface-container-highest text-primary font-bold text-xs rounded-full">HISTORY</div>
+<!-- The "Radar" shape -->
+<svg class="w-full h-full transform -rotate-90 drop-shadow-md" viewbox="0 0 100 100">
+<polygon class="fill-primary/20 stroke-primary stroke-2" points="50,10 85,50 50,90 20,50"></polygon>
+<circle class="fill-primary" cx="50" cy="10" r="3"></circle>
+<circle class="fill-primary" cx="85" cy="50" r="3"></circle>
+<circle class="fill-primary" cx="50" cy="90" r="3"></circle>
+<circle class="fill-primary" cx="20" cy="50" r="3"></circle>
+</svg>
+</div>
+<div class="mt-8 text-center">
+<h3 class="font-headline font-bold text-lg">Taste Synthesis</h3>
+<p class="text-sm text-on-surface-variant">Technical leadership is your primary focus this month.</p>
+</div>
+</div>
+<!-- Stats Card -->
+<div class="bg-editorial-gradient rounded-xl p-8 flex flex-col justify-between text-on-primary shadow-xl">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<h4 class="font-headline text-2xl font-bold leading-tight">Insight of the Week</h4>
+</div>
+<p class="font-body text-sm opacity-90 leading-relaxed italic">
+                    "You gravitate towards authors who bridge the gap between hard science and human philosophy."
+                </p>
+<div class="pt-4 border-t border-white/20">
+<span class="text-xs font-label uppercase tracking-widest">AI Confidence: 94%</span>
+</div>
+</div>
+</div>
+<!-- Favorite Authors Section -->
+<section class="mb-16">
+<div class="flex items-end justify-between mb-8">
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-primary font-bold mb-1">Your Curated Circle</p>
+<h2 class="font-headline text-3xl font-extrabold tracking-tight">Favorite Authors</h2>
+</div>
+<button class="text-primary text-sm font-semibold hover:underline">Explore More</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Author 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-full overflow-hidden mb-4 bg-surface-container-high relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="professional portrait of a modern female author in a library setting with warm ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpWl8rc97HeuIxMEX0-N3fiTK_kczBd6B78WC5qq8RQCi4ZKw9joZvRojnCt-qIs22fCvTBJbXqqsaI2dIS3aduQxJltcBZHNDNCK63S-ZMBEKt-fl1UrVkaSBn0KRn67s7Ac21sic89S7cNTBl5Fw2cDgFd0t7lINIdszNmwU0uPQyGODvG-Fjp4rE2sz7lv6eeu5DqyfiADwizUYj2gAK0kog7IF_XQPtYd-YrClt_aQnZAsKd5f1azAzETw0ETQjWrnRs6qTLPr"/>
+</div>
+<div class="text-center">
+<h4 class="font-headline font-bold text-on-surface">Elena Ferrante</h4>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">Literary Fiction</p>
+</div>
+</div>
+<!-- Author 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-full overflow-hidden mb-4 bg-surface-container-high relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="distinguished older male author with glasses and a thoughtful expression against a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpIC7YrW4wHBYHqjGPXbuUCNhuibAUOrUITNvG8b3xL_qFOpePnlxdsJ11No4GpFnfno0fn4d7-pYBlr88I9R_BCTavxg2Nxzej_RLiWfUcel_3-Qcx_qjvogt0v1P-AEFvG42AH2h1oKKUBUPBG3F0Ynj6KaJTvZV-wtTl2Pioxfgf585gdTSRoZ20o-T4ocDfVoOUeyCWAmBYxqc63LjdT_JzUNtQa-mFPh2mxPQ_Cd0oT70Vk6ObwSFX64Fp3uOacQrW6EVVap_"/>
+</div>
+<div class="text-center">
+<h4 class="font-headline font-bold text-on-surface">Malcolm Gladwell</h4>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">Psychology</p>
+</div>
+</div>
+<!-- Author 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-full overflow-hidden mb-4 bg-surface-container-high relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="creative male writer with beard in an urban studio apartment with natural window light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPeDRrzCLb4YljMgzSucEoWhFuGr2-zhNFfYDQkvvndkO4oX53UDWLbsCrwSc8C-aDijc7GRGddL6PsgOuueZD8BdBEyyHaTkKXHPVrtO1r1yGOdJsTHT_orHmMVNw-CixGhQ6t35aWP0ay-gCo7RgAuNzh3rB7KIIlAPKfixXYMbxrEgSnh4kpj7Mk0oYfROKdqc0gQCRxCxqGpdHOjm7F4vqK0KnrRj2ZzeYpYOgfihePiINCiAqI3Pj46ud8_eYTdp1XEfNg_OO"/>
+</div>
+<div class="text-center">
+<h4 class="font-headline font-bold text-on-surface">Walter Isaacson</h4>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">Biography</p>
+</div>
+</div>
+<!-- Author 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-full overflow-hidden mb-4 bg-surface-container-high relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="modern female tech writer in a bright minimalist office workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfwVV9SEvHeewEZY4bDaEi0_9vphqu0Zc_4OsV7GNqVH9B0X6OLOXO3LU7-amRU8S0-V7qoUZPeNCh67ATkOkWUKWG8OVBZWZ5TcZjHV2T4J6c3MkftM7Vsu84gN77_PYHlcRkpkNx8fxFmuDBkGM0aLsLYwiHRSHxsXaQrjopq8PYgVxlx6AL8IqebOfFZF0rZ9yQQkjc5VWDvhh9qdDvx35C0C__oCyIKhIIrg9wZ-aAnTgEZQLFAt_Z6pbty8zjEBbkjnpxs--K"/>
+</div>
+<div class="text-center">
+<h4 class="font-headline font-bold text-on-surface">Sheryl Sandberg</h4>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">Business</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Tune Recommendations Section -->
+<section class="bg-surface-container-low rounded-2xl p-8 md:p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl">tune</span>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight mb-4">Tune your recommendations</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                    The more we know, the better your feed becomes. Add or remove interests to recalibrate your digital bookshelf.
+                </p>
+<div class="flex flex-wrap gap-3 mb-10">
+<!-- Selected Chips -->
+<div class="flex items-center gap-2 bg-primary text-on-primary px-4 py-2 rounded-full text-sm font-medium">
+<span>Artificial Intelligence</span>
+<span class="material-symbols-outlined text-sm cursor-pointer">close</span>
+</div>
+<div class="flex items-center gap-2 bg-primary text-on-primary px-4 py-2 rounded-full text-sm font-medium">
+<span>Middle Eastern History</span>
+<span class="material-symbols-outlined text-sm cursor-pointer">close</span>
+</div>
+<div class="flex items-center gap-2 bg-primary text-on-primary px-4 py-2 rounded-full text-sm font-medium">
+<span>Minimalism</span>
+<span class="material-symbols-outlined text-sm cursor-pointer">close</span>
+</div>
+<div class="flex items-center gap-2 bg-primary text-on-primary px-4 py-2 rounded-full text-sm font-medium">
+<span>Science Fiction</span>
+<span class="material-symbols-outlined text-sm cursor-pointer">close</span>
+</div>
+<!-- Unselected Chips -->
+<div class="flex items-center gap-2 bg-surface-container-highest text-on-surface px-4 py-2 rounded-full text-sm font-medium hover:bg-outline-variant/30 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+<span>Classical Music</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-highest text-on-surface px-4 py-2 rounded-full text-sm font-medium hover:bg-outline-variant/30 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+<span>Gastronomy</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-highest text-on-surface px-4 py-2 rounded-full text-sm font-medium hover:bg-outline-variant/30 cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+<span>Architecture</span>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-4">
+<button class="bg-editorial-gradient text-on-primary px-8 py-3 rounded-xl font-bold text-sm shadow-lg active:scale-95 duration-200">
+                        Update Preferences
+                    </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-3 rounded-xl font-bold text-sm active:scale-95 duration-200">
+                        Reset Data
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 bg-[#fbf9f7]/80 backdrop-blur-md rounded-t-xl shadow-[0_-10px_30px_rgba(27,28,27,0.04)] flex justify-around items-center px-4 pb-6 pt-2 w-full">
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#e21f26] transition-colors active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Work_Sans'] text-[11px] font-medium uppercase tracking-wider">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#e21f26] transition-colors active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-['Work_Sans'] text-[11px] font-medium uppercase tracking-wider">Discover</span>
+</div>
+<!-- Active Tab: Profile -->
+<div class="flex flex-col items-center justify-center text-[#ba0015] dark:text-[#e21f26] font-bold scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Work_Sans'] text-[11px] font-medium uppercase tracking-wider">Profile</span>
+</div>
+<div class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#e21f26] transition-colors active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-['Work_Sans'] text-[11px] font-medium uppercase tracking-wider">Cart</span>
+</div>
+</nav>
+</body></html>

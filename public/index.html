@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jarir — For You (Recommendation Pilot)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"></span>
+      <div>
+        <strong>Jarir</strong>
+        <span class="sub">For You · AI recommendation pilot</span>
+      </div>
+    </div>
+    <div class="top-right">
+      <button type="button" class="btn secondary cart-open-btn" id="openCartBtn">Cart <span id="cartCountBadge">0</span></button>
+      <div class="pill">JSON backend · Demo</div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">Personal Curation</p>
+      <h1 id="heroGreeting">Good morning, …</h1>
+      <p class="lead">
+        A bespoke editorial experience for discovering your next best read. Recommendations combine
+        <strong>interaction history</strong>, <strong>affinity signals</strong>, and <strong>peer similarity</strong>.
+      </p>
+      <div class="controls">
+        <label for="userSelect">Shopper</label>
+        <select id="userSelect" aria-label="Choose demo user"></select>
+        <button type="button" id="refreshBtn" class="btn secondary">Refresh</button>
+      </div>
+      <div class="scenario-row" id="scenarioRow" hidden>
+        <span class="scenario-label">Try a sample journey</span>
+        <div class="scenario-chips" id="scenarioChips" role="group" aria-label="Demo scenarios"></div>
+      </div>
+      <p class="hint" id="userHint"></p>
+    </section>
+
+    <div id="panelBrowse" class="tab-panel-stack" role="tabpanel" aria-label="Shop and discover">
+    <section class="panel muted" id="discoverySection">
+      <div class="panel-head">
+        <h2>Discovery paths</h2>
+        <span class="badge outline">Curated journeys</span>
+      </div>
+      <div class="scenario-chips" id="scenarioChipsInline"></div>
+    </section>
+
+    <section class="panel library-panel" id="personalLibrary" aria-labelledby="libraryHeading">
+      <h2 id="libraryHeading" class="library-heading">Your Personal Library</h2>
+      <p class="library-sub">Shelves tuned from your browsing — tap a tile to jump to recommendations.</p>
+      <div class="library-bento" role="group" aria-label="Library categories">
+        <button type="button" class="library-tile library-tile--hero" data-library-focus>
+          <img
+            class="library-tile-bg"
+            alt=""
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz2g0fapSyl4qXm-MTvS-bpR-lw9D5imRsH6yibNmKJyA-f_hK-UpGF9BdPrVuhbfHYWbs-fGZvyDPzpzFz2CXGoCr2pROS87J1F6mzD7l6cpYon1FAiaYCDf2Kmw6o0BPA-RN3g-Y_OUDexd6knpCg4oZ5KRIS6NyZUVE1xlKsggzohUzGoIEGUaxTz7KyS7FjjsYTRWtOxyP040outtFlrXKBNs6XwKGSn0xB9RjI0CIY6e-VXGJ2NiKZPm6-vfZMfdahkAsOqNO"
+          />
+          <div class="library-tile-veil"></div>
+          <div class="library-tile-content">
+            <span class="library-pill">Most read</span>
+            <h3 class="library-tile-title">Philosophy &amp; modern thought</h3>
+          </div>
+        </button>
+        <button type="button" class="library-tile library-tile--icon" data-library-focus>
+          <span class="material-symbols-outlined library-icon" aria-hidden="true">palette</span>
+          <h3 class="library-tile-title library-tile-title--sm">Fine arts</h3>
+        </button>
+        <button type="button" class="library-tile library-tile--icon" data-library-focus>
+          <span class="material-symbols-outlined library-icon" aria-hidden="true">finance</span>
+          <h3 class="library-tile-title library-tile-title--sm">Business</h3>
+        </button>
+        <button type="button" class="library-tile library-tile--wide" data-library-focus>
+          <div class="library-wide-text">
+            <h3 class="library-tile-title library-tile-title--sm">Tech foundations</h3>
+            <p class="library-wide-meta">New arrivals &amp; essentials this week</p>
+          </div>
+          <span class="material-symbols-outlined library-icon library-icon--watermark" aria-hidden="true">memory</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="panel side">
+      <div class="panel-head">
+        <h2>Recent activity</h2>
+        <span class="badge outline">This shopper</span>
+      </div>
+      <ul class="activity-list" id="activityList"></ul>
+      <p class="empty" id="activityEmpty" hidden>No events yet — use scenarios or product buttons.</p>
+    </section>
+
+    <section class="panel" id="recommendationsSection">
+      <div class="panel-head">
+        <h2>Recommended for you</h2>
+        <span class="badge" id="recMeta">—</span>
+      </div>
+      <div id="recGrid" class="grid"></div>
+      <p class="empty" id="recEmpty" hidden>No recommendations yet — pick a user with interaction history.</p>
+    </section>
+
+    <section class="panel muted">
+      <div class="panel-head">
+        <h2>Full catalog</h2>
+        <span class="badge outline">Browse</span>
+      </div>
+      <div id="catGrid" class="grid compact"></div>
+    </section>
+    </div>
+
+    <div id="panelProfile" class="tab-panel-stack" role="tabpanel" aria-label="Your profile" hidden>
+    <section class="panel profile-panel" id="profileSection" aria-labelledby="profileHeadingBlock">
+      <p class="eyebrow">Personal Curation</p>
+      <h2 class="profile-persona-title" id="profileHeadingBlock">
+        <span id="profilePersonaLead">The Curious</span>
+        <span class="profile-persona-accent" id="profilePersonaAccentWord">Explorer</span>
+      </h2>
+      <p class="profile-summary" id="profileSummary">Loading your behavior summary…</p>
+      <div class="profile-stats" id="profileStats" aria-label="Interaction counts"></div>
+
+      <div class="profile-bento">
+        <div class="profile-radar-card">
+          <div class="profile-radar-visual">
+            <span class="profile-axis profile-axis--top" id="profileAxis0"></span>
+            <span class="profile-axis profile-axis--right" id="profileAxis1"></span>
+            <span class="profile-axis profile-axis--bottom" id="profileAxis2"></span>
+            <span class="profile-axis profile-axis--left" id="profileAxis3"></span>
+            <svg class="profile-radar-svg" viewBox="0 0 100 100" aria-hidden="true">
+              <circle class="profile-radar-ring" cx="50" cy="50" r="38" fill="none" />
+              <circle class="profile-radar-ring" cx="50" cy="50" r="28" fill="none" />
+              <circle class="profile-radar-ring" cx="50" cy="50" r="18" fill="none" />
+              <polygon id="profileRadarPoly" class="profile-radar-poly" points="50,12 88,50 50,88 12,50" />
+              <circle class="profile-radar-node" cx="50" cy="12" r="2.5" />
+              <circle class="profile-radar-node" cx="88" cy="50" r="2.5" />
+              <circle class="profile-radar-node" cx="50" cy="88" r="2.5" />
+              <circle class="profile-radar-node" cx="12" cy="50" r="2.5" />
+            </svg>
+          </div>
+          <div class="profile-radar-caption">
+            <h3 class="profile-card-title">Taste synthesis</h3>
+            <p class="profile-radar-meta" id="profileTasteSynthesis">—</p>
+          </div>
+        </div>
+        <div class="profile-insight-card">
+          <span class="material-symbols-outlined profile-insight-icon" aria-hidden="true">auto_awesome</span>
+          <h3 class="profile-card-title profile-card-title--light">Insight of the week</h3>
+          <p class="profile-insight-body" id="profileInsight">—</p>
+          <div class="profile-confidence">
+            <span id="profileConfidenceLabel">AI confidence</span>
+            <strong id="profileConfidencePct">—</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-subsection">
+        <div class="profile-subhead">
+          <p class="profile-eyebrow-inline">Your curated circle</p>
+          <h3 class="profile-subtitle">Favorite brands</h3>
+        </div>
+        <div class="profile-brands-row" id="profileBrandsRow"></div>
+      </div>
+
+      <div class="profile-subsection">
+        <div class="profile-subhead">
+          <p class="profile-eyebrow-inline">Behavior signals</p>
+          <h3 class="profile-subtitle">Tags inferred from activity</h3>
+        </div>
+        <div class="profile-interest-chips" id="profileInterestChips"></div>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <!-- Bottom nav (Stitch: personalized_home / user_interest_profile BottomNavBar) -->
+  <nav class="stitch-bottom-nav" role="navigation" aria-label="Primary">
+    <button type="button" class="stitch-bottom-nav__item is-active" data-bottom-nav="home" aria-current="page">
+      <span class="material-symbols-outlined stitch-bottom-nav__icon" aria-hidden="true">home</span>
+      <span class="stitch-bottom-nav__label">Home</span>
+    </button>
+    <button type="button" class="stitch-bottom-nav__item" data-bottom-nav="discover" aria-current="false">
+      <span class="material-symbols-outlined stitch-bottom-nav__icon" aria-hidden="true">explore</span>
+      <span class="stitch-bottom-nav__label">Discover</span>
+    </button>
+    <button type="button" class="stitch-bottom-nav__item" data-bottom-nav="profile" aria-current="false">
+      <span class="material-symbols-outlined stitch-bottom-nav__icon" aria-hidden="true">person</span>
+      <span class="stitch-bottom-nav__label">Profile</span>
+    </button>
+    <button type="button" class="stitch-bottom-nav__item stitch-bottom-nav__item--cart" data-bottom-nav="cart" aria-label="Open shopping cart">
+      <span class="stitch-bottom-nav__cart-wrap">
+        <span class="material-symbols-outlined stitch-bottom-nav__icon" aria-hidden="true">shopping_cart</span>
+        <span class="stitch-bottom-nav__badge" id="navCartBadge" hidden>0</span>
+      </span>
+      <span class="stitch-bottom-nav__label">Cart</span>
+    </button>
+  </nav>
+
+  <footer class="foot">
+    <span>Pilot stack: Node.js + static UI · Data: <code>data/*.json</code></span>
+    <span>Deploy: Render / Railway / Fly.io · <code>npm start</code></span>
+  </footer>
+
+  <div class="modal-backdrop" id="detailsModal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="detailsTitle">
+      <button type="button" class="modal-close" id="detailsCloseBtn" aria-label="Close details">×</button>
+      <div class="details-content">
+        <img id="detailsImage" class="details-image" alt="" />
+        <div class="details-text">
+          <h3 id="detailsTitle"></h3>
+          <p id="detailsMeta" class="meta"></p>
+          <p id="detailsPrice" class="price"></p>
+          <p id="detailsDesc" class="hint"></p>
+          <div id="detailsTags" class="tags"></div>
+          <div class="actions">
+            <button type="button" class="btn action" data-details-action="view">Record view</button>
+            <button type="button" class="btn action primary" data-details-action="cart">Add to cart</button>
+            <button type="button" class="btn action buy" data-details-action="purchase">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="cartModal" hidden>
+    <div class="modal-card cart-card" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <button type="button" class="modal-close" id="cartCloseBtn" aria-label="Close cart">×</button>
+      <div class="panel-head">
+        <h2 id="cartTitle">Shopping Cart</h2>
+        <span class="badge" id="cartItemsMeta">0 items</span>
+      </div>
+      <ul id="cartList" class="cart-list"></ul>
+      <p class="empty" id="cartEmpty">Your cart is empty.</p>
+      <div class="cart-summary">
+        <div><span>Subtotal</span><strong id="cartSubtotal">0 SAR</strong></div>
+        <div><span>Estimated VAT (15%)</span><strong id="cartVat">0 SAR</strong></div>
+        <div class="total"><span>Total</span><strong id="cartTotal">0 SAR</strong></div>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn action" id="clearCartBtn">Clear cart</button>
+        <button type="button" class="btn action buy" id="checkoutBtn">Checkout (demo)</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

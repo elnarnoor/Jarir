@@ -1,0 +1,8 @@
+[
+  { "id": "u1", "name": "Sara (Tech shopper)", "segment": "electronics_enthusiast" },
+  { "id": "u2", "name": "Omar (Office & study)", "segment": "office_student" },
+  { "id": "u3", "name": "Noura (Balanced buyer)", "segment": "omnichannel" },
+  { "id": "u4", "name": "Khalid (Gaming focus)", "segment": "gaming" },
+  { "id": "u5", "name": "Layla (Content creator)", "segment": "streaming" },
+  { "id": "u6", "name": "Faisal (Back-to-school)", "segment": "education" }
+]
