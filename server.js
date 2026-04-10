@@ -3,7 +3,13 @@ const fs = require("fs");
 const path = require("path");
 const url = require("url");
 
-const PORT = process.env.PORT || 3000;
+function listenPort() {
+  const raw = process.env.PORT;
+  if (raw == null || raw === "") return 3000;
+  const n = Number.parseInt(String(raw), 10);
+  return Number.isFinite(n) && n > 0 ? n : 3000;
+}
+const PORT = listenPort();
 const ROOT = __dirname;
 const DATA_DIR = path.join(ROOT, "data");
 const PUBLIC_DIR = path.join(ROOT, "public");
@@ -311,6 +317,14 @@ const server = http.createServer((req, res) => {
   }
 
   if (pathname === "/api/health") {
+    if (method === "HEAD") {
+      res.writeHead(200, {
+        "Cache-Control": "no-store",
+        "Access-Control-Allow-Origin": "*",
+      });
+      res.end();
+      return;
+    }
     sendJson(res, 200, { ok: true });
     return;
   }

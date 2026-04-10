@@ -1,6 +1,6 @@
 FROM node:20-alpine
 WORKDIR /app
-COPY package.json ./
+COPY package.json package-lock.json ./
 COPY server.js ./
 COPY data ./data
 COPY public ./public

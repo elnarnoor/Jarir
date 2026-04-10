@@ -1,0 +1,15 @@
+# Use when the service Root Directory is "Jarir" inside the monorepo.
+# Required: Railway → Service → Settings → Config as Code = "/Jarir/railway.toml"
+# (Config does not follow the root directory; without this, Docker/build settings
+# from the repo root may not apply.)
+#
+# Alternative: leave Root Directory empty and deploy from repo root using the
+# parent Dockerfile + railway.toml at the repository root.
+
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+healthcheckPath = "/api/health"
+healthcheckTimeout = 300
